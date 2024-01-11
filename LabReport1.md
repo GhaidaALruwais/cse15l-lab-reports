@@ -15,7 +15,7 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
   - I concluded that the cd command will not work with a given file argument because it is not a directory. 
   - After the error message, the second command line appeared in the messages directory, so no change occurred.
 ## Using "ls" command
-
+![Image](Ls123.png)
 ## Using "cat" command
 
 
