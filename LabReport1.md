@@ -7,8 +7,8 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
 ## Using "cd" command
 * No arguments and directory as an argument
 ![Image](cd1.png)
-  - In the first command, I used the change directory command ("cd") on the home directory without giving a path for a new directory. Thus, no change happened and the terminal remained in the same directory.
-  - In the second command, I used the change directory command ("cd") to move from the home directory to the messages directory. Therefore, the terminal changed the current working directory to the messages directory _[user@sahara ~/lecture1/messages]$_ 
+  - In the first command line, I used the change directory command ("cd") on the home directory without giving a path for a new directory. Thus, no change happened, and the terminal remained in the same directory.
+  - In the second command line, I used the change directory command ("cd") to move from the home directory to the messages directory. Therefore, the terminal changed the current working directory to the messages directory _[user@sahara ~/lecture1/messages]$_ 
 * File as an argument
 ![Image](cd2.png)
   - I tried to change the directory from the messages directory to the en-us.txt file. An error message appeared "bash: cd: en-us.txt: Not a directory."
@@ -16,6 +16,10 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
   - After the error message, the second command line appeared in the messages directory, so no change occurred.
 ## Using "ls" command
 ![Image](Ls123.png)
+- No arguments
+  - Since ls lists all the files and directories in the current directory, I used ls on the home directory to print Lecture1 directory (the only directory/file that exists in the home directory)
+- Directory as an argument
+- File as an argument
 ## Using "cat" command
 
 
