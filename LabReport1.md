@@ -5,7 +5,9 @@ The root directory is Lecture1. It contains Hello.class, Hello.java, README, and
 The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt files that demonstrate 'hello world' in different languages. 
 ***
 ## Using "cd" command
-
+* No arguments 
+* Directory as an argument
+* File as an argument
 ## Using "ls" command
 
 ## Using "cat" command
