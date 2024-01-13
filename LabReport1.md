@@ -30,7 +30,7 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
   - The "cat" command was executed on the home directory. The output was blank, but no error showed. 
 - Directory as an argument
   - In the home directory, I passed "lecture1" directory as an argument to the "cat" command. An error statement emerged "cat: lecture1/: Is a directory". Thus, we can conclude that the "cat" command can not run on a directory.  
--File as an argument
-  -In the home directory, I passed "fr-ch.txt" file as an argument to the "cat" command. No error statement was shown. Instead, the contents of the file was printed on the screen. 
+- File as an argument
+  - In the home directory, I passed "fr-ch.txt" file as an argument to the "cat" command. No error statement was shown. Instead, the contents of the file was printed on the screen. 
 
 
