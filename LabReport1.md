@@ -24,12 +24,12 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
   - Currently, the command line is working on the home directory. I used the ls command and passed a path to the "en-us.txt" file in the messages directory. The output printed a path to the "en-us.txt" file from the home directory. 
 ## Using "cat" command
 ![Image](Cat1.png)
+![Image](Cat2.png)
+![Image](Cat3.png)
 - No arguments
   - The "cat" command was executed on the home directory. The output was blank, but no error showed. 
-![Image](Cat2.png)
 - Directory as an argument
   - In the home directory, I passed "lecture1" directory as an argument to the "cat" command. An error statement emerged "cat: lecture1/: Is a directory". Thus, we can conclude that the "cat" command can not run on a directory.  
-![Image](Cat3.png)
 -File as an argument
   -In the home directory, I passed "fr-ch.txt" file as an argument to the "cat" command. No error statement was shown. Instead, the contents of the file was printed on the screen. 
 
