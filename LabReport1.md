@@ -7,7 +7,7 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
 ## Using "cd" command
 * No arguments and directory as an argument
 ![Image](cd1.png)
-  - In the first command line, I used the change directory command ("cd") on the home directory without giving a path for a new directory. Thus, no change happened, and the terminal remained in the same directory.
+  - In the first command line, I used the change directory command ("cd") on the home directory without giving a path for a new directory. Thus, no change happened, and the terminal remained in the same directory with no errors.
   - In the second command line, I used the change directory command ("cd") to move from the home directory to the messages directory. Therefore, the terminal changed the current working directory to the messages directory _[user@sahara ~/lecture1/messages]$_ 
 * File as an argument
 ![Image](cd2.png)
@@ -17,11 +17,11 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
 ## Using "ls" command
 ![Image](Ls123.png)
 - No arguments
-  - Since ls lists all the files and directories in the current directory, I used ls on the home directory. The output was a list showing the Lecture1 directory (the only directory/file that exists in the home directory)
+  - Since ls lists all the files and directories in the current directory, I used ls on the home directory. The output was a list showing the Lecture1 directory (the only directory/file that exists in the home directory). No error happened.
 - Directory as an argument
-  - Currently, the command line is working on the home directory. I used the ls command and passed a path to the messages directory as an argument. The output printed a list of all the files in the messages directory.  
+  - Currently, the command line is working on the home directory. I used the ls command and passed a path to the messages directory as an argument. The output printed a list of all the files in the messages directory. No error happened.
 - File as an argument
-  - Currently, the command line is working on the home directory. I used the ls command and passed a path to the "en-us.txt" file in the messages directory. The output printed a path to the "en-us.txt" file from the home directory. 
+  - Currently, the command line is working on the home directory. I used the ls command and passed a path to the "en-us.txt" file in the messages directory. The output printed a path to the "en-us.txt" file from the home directory. No error happened.
 ## Using "cat" command
 ![Image](Cat1.png)
 ![Image](Cat2.png)
