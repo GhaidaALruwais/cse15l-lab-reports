@@ -7,6 +7,7 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
 ## Using "cd" command
 * No arguments and directory as an argument
 ![Image](cd1.png)
+![Image](cdChanges.png)
   - In the first command line, I used the change directory command ("cd") on the home directory without giving a path for a new directory. Thus, no change happened, and the terminal remained in the same directory with no errors.
     -After trying the no-arg cd command on the lecture directory and the messages directory, it changed the working directory back to home directory. Therefore, we can conclude that using a no arg cd command will return the working directory back to the root/ home directory.
   - In the second command line, I used the change directory command ("cd") to move from the home directory to the messages directory. Therefore, the terminal changed the current working directory to the messages directory _[user@sahara ~/lecture1/messages]$_ 
