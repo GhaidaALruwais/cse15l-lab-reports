@@ -26,7 +26,7 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
   - Currently, the command line is working on the home directory. I used the ls command and passed a path to the "en-us.txt" file in the messages directory. The output printed a path to the "en-us.txt" file from the home directory. No error happened.
 ## Using "cat" command
 ![Image](Cat1.png)
-![Image]()
+![Image](catChanges.png)
 ![Image](Cat2.png)
 ![Image](Cat3.png)
 - No arguments
