@@ -30,7 +30,7 @@ The messages directory contains en-us.txt, es-mx.txt, fr-ch.txt, and zh-cn.txt f
 ![Image](Cat2.png)
 ![Image](Cat3.png)
 - No arguments
-  - The "cat" command was executed on the home directory. The output was blank, but no error showed. Anything you type in the terminal, it will be returned as an input. To exit that moed, you need to use control(^) + c.
+  - The "cat" command was executed on the home directory. The output was blank, but no error showed. Anything you type in the terminal, it will be returned as an output. To exit that mode, you need to use control(^) + c.
 - Directory as an argument
   - In the home directory, I passed "lecture1" directory as an argument to the "cat" command. An error statement emerged "cat: lecture1/: Is a directory". Thus, we can conclude that the "cat" command can not run on a directory.  
 - File as an argument
