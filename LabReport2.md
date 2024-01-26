@@ -12,3 +12,5 @@
 ![Public](AbsolutePathPublicKey.png)
 ### Accessing ieng6 account without passcode
 ![Access](AccountLogIn.png)
+## part 3
+I didn't know how to create a Java web server using HTTP. Therefore, the number, search, and chat server showed me how to implement the server class with custom requests by utilizing getPath(), getQuery(), and split methods.
