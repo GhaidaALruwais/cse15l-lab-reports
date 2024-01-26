@@ -1,5 +1,7 @@
 # Lab Report 2
 ## part 1
-# Using valid queries
-![Valid2](ValidChatServer.png)
-# Using invalid queries
+### Using valid queries
+![Valid1](ValidChatServer.png)
+![Valid2](ValidChatServer2.png)
+### Using invalid queries
+![Invalid](InvalidChatServer.png)
