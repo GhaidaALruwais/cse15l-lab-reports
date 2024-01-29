@@ -11,7 +11,7 @@ The server is constructed using the Server class used in the lab. Therefore, the
 ### Using invalid queries
 ![Invalid](InvalidChatServer.png)
 - After the port number we can specify a custom path that the handleRequest method will use to make requests like printing a conversation.
-- If the path is unrecognized in the HandleRequest method it will return invalid
+- If the path is unrecognized in the handleRequest method it will return invalid
 - If the path is recognized it will be sent to the segment method.
 - The segment method will return invalid if the user/message variables do not exist in the URL.
 - In the server snippet above, the path was unrecognized as it was "add?" not "add-message?". Thus, it directly returned invalid without calling the segment method.
