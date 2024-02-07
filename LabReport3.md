@@ -67,7 +67,7 @@ gb-2002-3-5-research0022.txt
 
 ```
 In the code block above the path to the current directory is "/technical/biomed". I aim to find where the pattern
-"clinical trials" exist in "biomed" by using grep -l "clinical trials" \*. The \* indicates the grep -l command to
+"clinical trials" exist in "biomed" by using grep -l "clinical trials" \*. The \* is an indicator for the grep -l command to
 search all the files in "biomed" directory. The result was a list of file names that contain "clinical trials".
 - The grep -l option is crucial when you want to edit files that contain a certain pattern. For example, if a specific IOS version is outdated, you use grep -l to search for all the files that use the outdated version
 and then you can substitute it with the new supported version.
@@ -82,10 +82,10 @@ ghida04@MacBook-Pro-5 biomed % grep -l "clinical trials" 1468-6708-3-1.txt ar750
 ```
 In the code block above the path to the current directory is "/technical/biomed". I aim to find which 
 of these three files contains clinical trials by using the pattern "clinical trials". Instead of using \* as the example
-before, I listed the files that I want the grep -l command to search in. The result was the name of the file that contained 
+before, I listed the files that I want the grep -l command to search. The result was the name of the file that contained 
 "clinical trials".
 - if the specified files are not in the current working directory, an error will show saying that there is no file called "... "
-- if there are no files that match the pattern given, no file name will be returned.
+- if there are no files that match the pattern given, no name will be returned.
 - The grep -l "pattern "files" option is crucial when you want to edit a set/ collection of files that contain a certain pattern. For example, if you are building an app and you need to update files from last year that contain
 functionality that is no longer supported in the new IOS version. You already know the functionality that is no longer supported and the set of files from previous years, for example, the files with a name that contains 2020. You
 can use grep -l "pattern" "files" to look for the specific files that implement the outdated functionality.
