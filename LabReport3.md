@@ -8,7 +8,7 @@
 #### overview 
 grep -l displays the names of the file that contains the specific pattern given
 #### grep -l "pattern" *
-returns the names of the files that contain "pattern" in current directory.
+returns the names of the files that contain "pattern" in the current directory.
 ```
 ghida04@MacBook-Pro-5 docsearch % cd technical
 ghida04@MacBook-Pro-5 technical % cd biomed
@@ -66,5 +66,7 @@ gb-2001-2-10-research0041.txt
 gb-2002-3-5-research0022.txt
 
 ```
-In the example above the path to the current directory is "/technical/biomed".  
+In the code block above the path to the current directory is "/technical/biomed". I aim to find where the pattern
+"clinical trials" exist in "biomed" by using grep -l "clinical trials" \*. The \* indicates the grep -l command to
+search all the files in "biomed" directory. The result was a list of file names that contain "clinical trials".
 #### grep -l "pattern" "specificFilesToLookIn"
