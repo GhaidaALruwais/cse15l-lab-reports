@@ -5,9 +5,9 @@
 
 ## Part 2
 ### grep -l
-#### overview 
+### overview 
 grep -l displays the names of the file that contains the specific pattern given
-#### grep -l "pattern" *
+### grep -l "pattern" *
 returns the names of the files that contain "pattern" in the current directory.
 ```
 ghida04@MacBook-Pro-5 docsearch % cd technical
@@ -71,7 +71,7 @@ In the code block above the path to the current directory is "/technical/biomed"
 search all the files in "biomed" directory. The result was a list of file names that contain "clinical trials".
 - The grep -l option is crucial when you want to edit files that contain a certain pattern. For example, if a specific IOS version is outdated, you use grep -l to search for all the files that use the outdated version
 and then you can substitute it with the new supported version.
-#### grep -l "pattern" "specificFiles"
+### grep -l "pattern" "specificFiles"
 returns the names of the given files that contain "pattern" in the current directory.
 ```
 ghida04@MacBook-Pro-5 docsearch % cd technical
