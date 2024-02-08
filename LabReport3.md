@@ -89,5 +89,42 @@ before, I listed the files that I want the grep -l command to search. The result
 - The grep -l "pattern "files" option is crucial when you want to edit a set/ collection of files that contain a certain pattern. For example, if you are building an app and you need to update files from last year that contain
 functionality that is no longer supported in the new IOS version. You already know the functionality that is no longer supported and the set of files from previous years, for example, the files with a name that contains 2020. You
 can use grep -l "pattern" "files" to look for the specific files that implement the outdated functionality.
-- 
+
+### grep -c 
+### Overview 
+displays how many "pattern" exist in "file"
+### grep -c "pattern" *
+```
+ghida04@MacBook-Pro-5 911report % grep -c "someone" *
+chapter-1.txt:6
+chapter-10.txt:2
+chapter-11.txt:1
+chapter-12.txt:1
+chapter-13.1.txt:3
+chapter-13.2.txt:2
+chapter-13.3.txt:1
+chapter-13.4.txt:4
+chapter-13.5.txt:0
+chapter-2.txt:1
+chapter-3.txt:3
+chapter-5.txt:2
+chapter-6.txt:3
+chapter-7.txt:2
+chapter-8.txt:6
+chapter-9.txt:0
+preface.txt:0
+```
+- the \* is used to indicate a search for all files in the directory
+- Returns the count of pattern "someone" in all the files in the directory
+### grep -c "patter" "file"
+```
+ghida04@MacBook-Pro-5 technical % cd government
+ghida04@MacBook-Pro-5 government % cd media
+ghida04@MacBook-Pro-5 media % grep -c "laws" 5_legal_Groups.txt
+0
+ghida04@MacBook-Pro-5 media % grep -c "law" 5_legal_Groups.txt
+2
+```
+- returns the count of pattern in the given file/ files
+- Grep -c doesn't work if your input is a directory instead of a file. It will indicate an error saying that \(...) is a directory
 
