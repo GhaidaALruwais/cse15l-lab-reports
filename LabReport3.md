@@ -1,7 +1,40 @@
 # Lab Report 3
 
 ## Part 1 
+### Buggy Program
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
 
+### failure-inducing test
+```
+@Test
+  public void testReversed2() {
+    int[] input1 = {1,2,3 };
+    ArrayExamples.reversed(input1);
+    assertArrayEquals(new int []{3,2,1}, ArrayExamples.reversed(input1));
+  }
+```
+
+### passing test
+```
+@Test
+  public void testReversed() {
+    int[] input1 = { 3 };
+    assertArrayEquals(new int[]{ 3 }, ArrayExamples.reversed(input1));
+  }
+```
+
+### Symptom of running failure-inducing test
+![symptom]()
+
+### After debugging
 
 ## Part 2
 ### grep -l
