@@ -52,21 +52,22 @@ class ChatServer {
 ```
 ### Using valid queries
 ![Valid2](ValidChatServer2.png)
-- After the port number we can specify a custom path that the handleRequest method will use to make requests like printing a conversation.
+- After the port number we can specify a custom path that the ```handleRequest(URI)``` will use to make requests like printing a conversation.
 - The path specified was ```/add-message?``` which alerts the method that the following components of the URI will be a query.
 - Then a segment method will take in the URI and segment the URL after the query into user and message variables.
-- The segment method will return a string with the user and message variables in ```user: message``` format.
-- fields in the handleRequest are not changed. The URI will be sent to the segment method where ```.getQuery()``` and ```.split()``` methods are used to set the string value of the user/message fields.
-  - However, if the server's URI is edited, the ```handleRequest(URI)``` will call ```segment(URI)``` and the message/user fields will be updated to match the new inputs to the query. 
+- The ```segment(URI)``` will return a string with the user and message variables in ```user: message``` format.
+- fields in the ```handleRequest(URI)``` are not changed. The URI will be sent to the segment method where ```.getQuery()``` and ```.split()``` methods are used to set the string value of the user/message fields.
+  - However, if the server's URI is edited, the ```handleRequest(URI)``` will call ```segment(URI)``` and the message/user string fields will be updated to match the new inputs to the query. 
 ### Using invalid queries
 ![Invalid](InvalidChatServer.png)
-- After the port number we can specify a custom path that the handleRequest method will use to make requests like printing a conversation.
-- If the path is unrecognized in the handleRequest method it will return invalid
-- If the path is recognized it will be sent to the segment method.
-- The segment method will return invalid if the user/message variables do not exist in the URL.
-- In the server snippet above, the path was unrecognized as it was "add?" not "add-message?". Thus, it directly returned invalid without calling the segment method.
-- The handleRequest method does not change any fields because it just detects if the URL has a recognized path, and a correct syntax for the query, and then sends the URL into the segment method.
-- No values of relevant fields are changed from the segment method because it takes in the URL and uses .getQuery() and .split() methods to find the user/message without changing the URL.
+- After the port number we can specify a custom path that the ```handleRequest(URI)``` will use to make requests like printing a conversation.
+- If the path is unrecognized in the ```handleRequest(URI)``` it will return invalid
+- If the path is recognized it will be sent to the ```segment(URI)```.
+- The ```segment(URI)``` will return invalid if the user/message variables do not exist in the URI.
+- In the server snippet above, the path was unrecognized as it was ```add?``` not ```add-message?```. Thus, it directly returned invalid without calling the ```segment(URI)```.
+- The ```handleRequest(URI)``` does not change any fields because it detects if the URI has a recognized path, and a correct syntax for the query, and then sends the URI into the ```segment(URI)```.
+- In case of an invalid query such as the one above, ```handleRequest(URI)``` will not call ```segment(URI)``` and the relevant user/message string fields will not be updated.
+- In case of invalid inputs, ```handleRequest(URI)``` will call ```segment(URI)```. however, the inputs will not match the correct ones ```s= , user= ```, so it will return ```"invalid"``` directly without affecting relevant fields. 
 ## part 2
 ### Absolut path to private key
 ![Private](AbsolutePathPrivateKey.png)
