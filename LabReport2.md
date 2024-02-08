@@ -71,8 +71,19 @@ class ChatServer {
 ## part 2
 ### Absolut path to private key
 ![Private](AbsolutePathPrivateKey.png)
+```
+ghida04@MacBook-Pro-5 .ssh % find $PWD -type f | grep "id_rsa"  
+/Users/ghida04/.ssh/id_rsa
+/Users/ghida04/.ssh/id_rsa.pub
+```
+- The path to the private key id_rsa is shown above. 
 ### Absolut path to public key
 ![Public](AbsolutePathPublicKey.png)
+```
+[galruwais@ieng6-203]:.ssh:90$ find $PWD -type f | grep "id_rsa.pub"
+/home/linux/ieng6/oce/07/galruwais/.ssh/id_rsa.pub
+```
+- The path to the public key id_rsa.pub is shown above.
 ### Accessing ieng6 account without passcode
 ![Access](AccountLogIn.png)
 ## part 3
