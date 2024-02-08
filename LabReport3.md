@@ -89,6 +89,20 @@ before, I listed the files that I want the grep -l command to search. The result
 - The grep -l "pattern "files" option is crucial when you want to edit a set/ collection of files that contain a certain pattern. For example, if you are building an app and you need to update files from last year that contain
 functionality that is no longer supported in the new IOS version. You already know the functionality that is no longer supported and the set of files from previous years, for example, the files with a name that contains 2020. You
 can use grep -l "pattern" "files" to look for the specific files that implement the outdated functionality.
+### sources
+- https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+- ChatGPT:
+  - Supplying a set of files to the grep -l "pattern" "files" command allows you to search for a pattern ("pattern") across multiple files simultaneously and obtain a list of filenames that contain the pattern. Here's how it can be useful:
+
+      - Batch Processing: When you have a collection of files and you want to quickly identify which ones contain a certain pattern, grep -l allows you to perform this search efficiently in one command. This is especially useful when dealing with large datasets or directories with many files.
+
+      -  Selective Action: After identifying the files that contain the pattern, you can perform further actions on these files selectively. For example, you might want to process or analyze only those files that match a specific criterion.
+
+      - Logging and Monitoring: In system administration or monitoring tasks, you may want to check logs or specific files for certain patterns. grep -l allows you to automate this process and obtain a list of files that match the criteria, which can then be further analyzed or monitored.
+
+      - Integration with Other Commands: grep -l can be combined with other commands in pipelines to perform complex operations. For example, you can use it in conjunction with xargs to process the matching files or with find to search recursively through directories.
+
+      - Overall, supplying a set of files to grep -l "pattern" "files" provides a versatile and efficient way to search for patterns across multiple files and obtain a list of filenames that match the pattern, enabling further analysis or action as needed.
 
 ### grep -c 
 ### Overview 
@@ -128,6 +142,8 @@ ghida04@MacBook-Pro-5 media % grep -c "law" 5_legal_Groups.txt
 ```
 - returns the count of pattern in the given file/ files
 - Grep -c doesn't work if your input is a directory instead of a file. It will indicate an error saying that \(...) is a directory
+### sources used
+- https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ### grep -n 
 ### Overview 
@@ -205,11 +221,21 @@ plos/pmed.0010021.txt:80:          But clinical trials carried out in our Nation
 #### The list above has been cut down (lines that contain similar directories aren't shown due to the list's length)
 - This command option shows all the calls to "clinical trial" in all files or directories of ./technical
 - Each line shows the directory, file name, line number, and line contents that are associated with the pattern/ "clinical trial"
+### sources used
+- https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+- chatGPT:
+  - what are the different inputs i can give for grep -n
+    - Search in a Single File: You can specify the name of a single file to search in
+    - Search in Multiple Files: You can specify multiple files to search in
+    - Search in All Files in a Directory: You can use wildcards (*) to search in all files in a directory
+    - Recursive Search in Subdirectories: You can perform a recursive search in all subdirectories of a directory using the -r or -R option:
+    - Search in Standard Input: You can pipe input to grep from another command and use - to represent standard input
+    - Search in Output of Another Command: You can use the output of another command as input to grep
 
 ### Using ^ in grep
 ### Overview
 using "^pattern" results in a list of lines that start with "pattern"
-This operation on grep is helpful when you want to delete the lines that don't/do start with a specific word from files.
+This option on grep is helpful when you want to delete the lines that don't/do start with a specific word from files.
 ### grep "^pattern" * or "files"
 ```
 ghida04@MacBook-Pro-5 government % cd media
@@ -248,3 +274,17 @@ Gen_Account_Office/d01591sp.txt:someone who never saves will have no wealth.20 C
 ```
 - Recursively searched the government directories and files for lines that start with "someone"
 - Each line shows the directory, file name, and the line that starts with "pattern"
+### sources used
+- https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+- chatGPT:
+  - what are the different inputs i can give for grep -n
+    - Search in a Single File: You can specify the name of a single file to search in
+    - Search in Multiple Files: You can specify multiple files to search in
+    - Search in All Files in a Directory: You can use wildcards (*) to search in all files in a directory
+    - Recursive Search in Subdirectories: You can perform a recursive search in all subdirectories of a directory using the -r or -R option:
+    - Search in Standard Input: You can pipe input to grep from another command and use - to represent standard input
+    - Search in Output of Another Command: You can use the output of another command as input to grep
+
+
+  
+
