@@ -32,7 +32,7 @@ static int[] reversed(int[] arr) {
 ```
 
 ### Symptom of running failure-inducing test
-![symptom](symptom.png)
+![symptom](Symptom.png)
 
 ### After debugging
 
