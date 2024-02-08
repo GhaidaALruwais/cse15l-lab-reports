@@ -228,7 +228,7 @@ plos/pmed.0010021.txt:80:          But clinical trials carried out in our Nation
     - Search in a Single File: You can specify the name of a single file to search in
     - Search in Multiple Files: You can specify multiple files to search in
     - Search in All Files in a Directory: You can use wildcards (*) to search in all files in a directory
-    - Recursive Search in Subdirectories: You can perform a recursive search in all subdirectories of a directory using the -r or -R option:
+    - Recursive Search in Subdirectories: You can perform a recursive search in all subdirectories of a directory using the -r or -R option
     - Search in Standard Input: You can pipe input to grep from another command and use - to represent standard input
     - Search in Output of Another Command: You can use the output of another command as input to grep
 
@@ -277,11 +277,11 @@ Gen_Account_Office/d01591sp.txt:someone who never saves will have no wealth.20 C
 ### sources used
 - https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 - chatGPT:
-  - what are the different inputs i can give for grep -n
+  - what are the different inputs i can give for grep "^ "
     - Search in a Single File: You can specify the name of a single file to search in
     - Search in Multiple Files: You can specify multiple files to search in
     - Search in All Files in a Directory: You can use wildcards (*) to search in all files in a directory
-    - Recursive Search in Subdirectories: You can perform a recursive search in all subdirectories of a directory using the -r or -R option:
+    - Recursive Search in Subdirectories: You can perform a recursive search in all subdirectories of a directory using the -r or -R option
     - Search in Standard Input: You can pipe input to grep from another command and use - to represent standard input
     - Search in Output of Another Command: You can use the output of another command as input to grep
 
