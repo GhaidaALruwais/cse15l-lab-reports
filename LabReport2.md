@@ -1,6 +1,55 @@
 # Lab Report 2
 ## part 1
 The server is constructed using the Server class used in the lab. Therefore, the main method works the same with valid/invalid arguments. The main method constructs the server on the local machine using the port number given to the terminal. The terminal will start the server after compiling and providing a port number. After the terminal starts the server we are provided with an alert "server started", then we can open the web server from the local machine by using localhost:4040 (port). The following chat commands will be written directly in the search bar using paths and queries. 
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    private ArrayList <String> chatMessages = new ArrayList<String>();
+
+    public String handleRequest(URI url) {
+        if(url.getPath().equals("/")){
+            return"welcome to the server";
+
+        }else{
+            if (url.getPath().equals("/add-message")) {
+                return segmentString(url);
+            } else {
+                return "invalid";
+            }
+        }
+    }
+
+    public String segmentString(URI url){
+        String [] user = url.getQuery().split("&")[1].split("=");
+        String [] message = url.getQuery().split("&")[0].split("=");
+        if(message[0].equals("s") && user[0].equals("user")){
+            return user[1] + ": " + message[0]+ "\n";
+        }else {
+            return "invalid";
+        }
+
+    }
+
+}
+
+class ChatServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 ### Using valid queries
 ![Valid2](ValidChatServer2.png)
 - After the port number we can specify a custom path that the handleRequest method will use to make requests like printing a conversation.
