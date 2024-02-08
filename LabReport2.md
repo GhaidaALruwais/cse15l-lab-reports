@@ -53,10 +53,10 @@ class ChatServer {
 ### Using valid queries
 ![Valid2](ValidChatServer2.png)
 - After the port number we can specify a custom path that the handleRequest method will use to make requests like printing a conversation.
-- The path specified was /add-message? which alerts the method that the following components of the URL will be a query.
+- The path specified was ```/add-message?``` which alerts the method that the following components of the URL will be a query.
 - Then a segment method will take in the URL and segment the URL after the query into user and message variables.
-- The segment method will return a string with the user and message variables in \[user: message] format.
-- No values of relevant fields are changed from the segment method because it takes in the URL and uses .getQuery() and .split() methods to find the user/message without affecting the URL.
+- The segment method will return a string with the user and message variables in ```user: message``` format.
+- No values of relevant fields are changed from the segment method because it takes in the URL and uses ```.getQuery()``` and ```.split()``` methods to find the user/message without affecting the URL.
 ### Using invalid queries
 ![Invalid](InvalidChatServer.png)
 - After the port number we can specify a custom path that the handleRequest method will use to make requests like printing a conversation.
