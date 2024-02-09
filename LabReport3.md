@@ -269,7 +269,6 @@ plos/pmed.0020258.txt:42:        it; it would be interesting to know whether pre
 plos/pmed.0020278.txt:22:        was an abject failure in two human clinical trials, including a trial of over 2,500
 plos/pmed.0020055.txt:64:        clinical trials, but not yet for other medical research. An ultimate aim for reporting
 plos/pmed.0010021.txt:80:          But clinical trials carried out in our National Institutes of Health–sponsored General
-
 ```
 #### The list above has been cut down (lines that contain similar directories aren't shown due to the list's length)
 - This command option shows all the calls to "clinical trial" in all files or directories of ./technical
