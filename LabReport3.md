@@ -34,7 +34,27 @@ static int[] reversed(int[] arr) {
 ### Symptom of running failure-inducing test
 ![symptom](Symptom.png)
 
-### After debugging
+### Before and After debugging
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i++) {
+      newArray[i] = arr[arr.length - 1 - i ];
+    }
+    return newArray;
+  }
+```
+Before it used to replace the elements of input ```arr``` with default value elements of ```newArray```. Then, it returns the modified ```arr```. It resulted in an indexing bug that returned an array with incorrect data manipulation. After correctly assigning the variables, we store the reversed elements in the new array and then return it without changing ```arr``` elements.
+
 
 ## Part 2
 ### grep -l
