@@ -117,7 +117,6 @@ cvm-2-6-278.txt
 cvm-2-6-286.txt
 gb-2001-2-10-research0041.txt
 gb-2002-3-5-research0022.txt
-
 ```
 In the code block above the path to the current directory is "/technical/biomed". I aim to find where the pattern
 "clinical trials" exist in "biomed" by using grep -l "clinical trials" \*. The \* is an indicator for the grep -l command to
@@ -131,7 +130,6 @@ ghida04@MacBook-Pro-5 docsearch % cd technical
 ghida04@MacBook-Pro-5 technical % cd biomed
 ghida04@MacBook-Pro-5 biomed % grep -l "clinical trials" 1468-6708-3-1.txt ar750.txt cc105.txt
 1468-6708-3-1.txt
-
 ```
 In the code block above the path to the current directory is "/technical/biomed". I aim to find which 
 of these three files contains clinical trials by using the pattern "clinical trials". Instead of using \* as the example
