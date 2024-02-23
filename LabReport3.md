@@ -282,58 +282,43 @@ plos/pmed.0010021.txt:80:          But clinical trials carried out in our Nation
     - Search in Standard Input: You can pipe input to grep from another command and use - to represent standard input
     - Search in Output of Another Command: You can use the output of another command as input to grep
 
-### Using ^ in grep
+### Using -L in grep
 ### Overview
-using "^pattern" results in a list of lines that start with "pattern"
-This option on grep is helpful when you want to delete the lines that don't/do start with a specific word from files.
-### grep "^pattern" * or "files"
+using "-L pattern" results in a list of files that doesn't contain "pattern"
+This option on grep is helpful when you want to traverse the files that don't contain certain words.
+### grep -r -L "pattern" * or "directory"
 ```
-ghida04@MacBook-Pro-5 government % cd media
-ghida04@MacBook-Pro-5 media % grep "^age" *
-5_Legal_Groups.txt:agencies. All of the agencies can share the same reception area and
-5_Legal_Groups.txt:agencies about $375,000 each year. My assistant, Charity
-All_May_Have_Justice.txt:age. This campaign provides financial assistance to agencies that
-Annual_Fee.txt:agencies throughout the state, including the Legal Assistance
-BergenCountyRecord.txt:agency a proper hearing.
-BergenCountyRecord.txt:agency's executive vice president, Randi Youells, sought the merger
-City_Council_Budget.txt:agency to the Corporation Counsel's Office.
-Farm_workers.txt:agency's pesticide project. 'Imagine in your own office if half the
-Firm_to_the_Poor_Needs_Help.txt:agencies.
-It_Pays_to_Know.txt:agents of Utah Nonprofit Housing to find out about her
-Legal_Aid_campaign.txt:agency will receive $400,000 less in federal funds in 2003, because
-Legal_services_for_poor.txt:agency's clients are poor, and many are elderly or disabled, he
-New_Online_Resources.txt:agencies run more efficiently.
-Owning_a_Piece.txt:agency's Church Street building in Lower Manhattan, which was
-Owning_a_Piece.txt:agency would emphasize services for the elderly, housing
-Paralegal_Honored.txt:agency was first opened to serve Lancaster, York and Reading.
-Poverty_Lawyers.txt:agencies representing the indigent - including Legal Aid, the South
-Providing_Legal_Aid.txt:agencies or subdivisions of the state, nor any colleges or
-Raising_the_Bar.txt:agent and a full-time homemaker, he was educated at Catholic
-Survey.txt:agencies in New York begin at slightly higher salaries.
+ghida04@MacBook-Pro-5 technical % grep -r -L "the" * 
 ```
-- shows the directory, file name, and line that starts with "age"
-- It is not accurate since it returns any word that starts with age such as agency
-- If you want to show only lines that start with the word "age" then you need to add a space at the end "^age "
+- recursively go through all directories in the directory
+- shows the directory and file name that doesn't contain the word "the"
 
-### grep "^pattern" -r directory/
+### grep -i -L "pattern" *
 ```
-ghida04@MacBook-Pro-5 technical % cd government 
-ghida04@MacBook-Pro-5 government % grep "^someone" -r *
-Gen_Account_Office/pe1019.txt:someone for even modest help (like minding a child for an hour) had
-Gen_Account_Office/d01591sp.txt:someone who never saves will have no wealth.20 Conversely,
+ghida04@MacBook-Pro-5 911report % grep -i -L "Trials" * 
+chapter-1.txt
+chapter-10.txt
+chapter-12.txt
+chapter-13.1.txt
+chapter-13.2.txt
+chapter-13.3.txt
+chapter-13.5.txt
+chapter-2.txt
+chapter-5.txt
+chapter-6.txt
+chapter-7.txt
+chapter-8.txt
+chapter-9.txt
+preface.txt
 ```
-- Recursively searched the government directories and files for lines that start with "someone"
-- Each line shows the directory, file name, and the line that starts with "pattern"
+- uses -i to be case insensitive.
+- Each line shows the files that do not contain "Trials" or "trials".
 ### sources used
 - https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 - chatGPT:
-  - what are the different inputs i can give for grep "^ "
-    - Search in a Single File: You can specify the name of a single file to search in
-    - Search in Multiple Files: You can specify multiple files to search in
-    - Search in All Files in a Directory: You can use wildcards (*) to search in all files in a directory
-    - Recursive Search in Subdirectories: You can perform a recursive search in all subdirectories of a directory using the -r or -R option
-    - Search in Standard Input: You can pipe input to grep from another command and use - to represent standard input
-    - Search in Output of Another Command: You can use the output of another command as input to grep
+  - what are the different inputs I can give for grep "-L "
+    - -r
+    - -i
 
 
   
