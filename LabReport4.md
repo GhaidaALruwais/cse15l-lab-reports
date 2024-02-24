@@ -37,7 +37,7 @@ no speed up commands were used.
 - ```<up> <up>``` to go above two lines to the previous code in step 6
 - ```<enter>``` to compile and check the tests again.
 
-## Step 8: commit and push changes
+## Step 9: commit and push changes
 
 ![step9](step9.1.png)
 ![step9](step9.2.png)
