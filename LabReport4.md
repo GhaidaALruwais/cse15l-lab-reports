@@ -4,6 +4,7 @@
 ![step4](step4.png)
 
 no speed up commands were used.
+
 ## Step 5: cloning the fork of the repository
 
 ![step5](step5.png)
@@ -13,10 +14,14 @@ no speed up commands were used.
 - Then ```command-v``` to paste the ssh url after git clone
 - cd into lab7 by typing cd l then ```<tab><enter>``` to autofill lab7
 
+## Step 6: Running tests
+
 ![step6](step6.2.png)
 
 - I wrote ```bash t```
 - Then used ```<tab>``` to autofill the name of the bash script that run the tests ```test.sh```
+
+## Step 7: Editing ListExamples.java
 
 ![step7](step7.1.png)
 ![step7](step7.2.png)
@@ -25,11 +30,15 @@ no speed up commands were used.
 - it autofilled till ```ListExamples``` so i wrote ```.java``` then ```<enter>```
 - the window above showed. i used ```i``` to go in insert mode
 - Fixed the bug then ```:wq``` to save and quit the vim insert mode
+
+## Step 8: Running tests
   
 ![step8](step8.png)
 - ```<up> <up>``` to go above two lines to the previous code in step 6
 - ```<enter>``` to compile and check the tests again.
-  
+
+## Step 8: commit and push changes
+
 ![step9](step9.1.png)
 ![step9](step9.2.png)
 ![step9](step9.3.png)
