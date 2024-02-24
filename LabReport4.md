@@ -1,6 +1,6 @@
 # Lab Report 4
 ## Step 4: logging to ieng6
-![step4]("step1.png")
+![step4]("step4.png")
 no speed up commands were used.
 ## Step 5: cloning the fork of the repository
 ![step5]()
