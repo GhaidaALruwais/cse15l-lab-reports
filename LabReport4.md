@@ -29,7 +29,9 @@ no speed up commands were used.
 - wrote ```vi L``` then ```<tab>```
 - it autofilled till ```ListExamples``` so i wrote ```.java``` then ```<enter>```
 - the window above showed. i used ```i``` to go in insert mode
-- Fixed the bug then ```:wq``` to save and quit the vim insert mode
+- Then navigated using ```arrow down``` till the line that contains index1
+- Then changed 1 to 2, Then ```ESC``` to go out of insert mode
+- After fixing the bug, i used ```:wq``` to save the changes made and quit the vim insert mode
 
 ## Step 8: Running tests
   
