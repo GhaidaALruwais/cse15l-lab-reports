@@ -19,7 +19,7 @@ logged in using the saved ssh keys without a passcode
 - Then ```command-v``` to paste the ssh url after git clone
 - cd into lab7 by typing cd l then ```<tab><enter>``` to autofill lab7
 - The ```<tab>``` autofills the name of the repository if it is unique like lab7.
-    - if it is not unqiue then i can type till the unique part and use ```<tab>``` example having lab712 and lab7 when you press ```<tab>``` it will autofill till lab7 then i can type 1 and use ```<tab>``` again and it will autofill till lab712
+    - if it is not unqiue then i can type till the unique part and use ```<tab>``` example having lab712 and lab7 when you type l then press ```<tab>``` it will autofill till lab7 then i can type 1 and use ```<tab>``` again and it will autofill till lab712
 
 ## Step 6: Running tests
 
