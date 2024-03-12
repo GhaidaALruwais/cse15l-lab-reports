@@ -97,8 +97,11 @@ lab7
 
 ## The symptom
 
+![](bugFailure.png)
 ## Response
 
 ## Fixed bug
 
+![](afterBugTests.png)
+![](afterBugCode.png)
 ## Reflection
