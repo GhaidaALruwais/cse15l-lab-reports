@@ -98,12 +98,24 @@ lab7
 ## The symptom
 
 ![](bugFailure.png)
-The program is failing at merge2 test, which has the case in which the first element in list2 > list1. 
+
+- The program is failing at merge2 test, which has the case in which the first element in list2 > list1.
 ## Response
 
+- When list2 > list1 it will execute the if block in the first while loop, and add all the elements in the first list first
+- It will not execute the second while loop and it will directly go to the third while loop
+- The error must be in the third while loop.
+- You can use print statements in the third while loop to check the variables 
 ## Fixed bug
 
 ![](afterBugCode.png)
 ![](afterBugTests.png)
 
+- After writing print statement i realized that i was using index1 instead of index2
+- Thus this while loop will not terminate because index2 will never be >= list2.size()
+- How would this affect merge2 test?
+  - The merge2 test has a timeout that will terminate the test after 500.
+  - The symptom shown is the termination error due to infinite time loop that exceeded 500
+    
 ## Reflection
+Learning jdb and command line debugging has helped me the most this quarter. Not only with Cse 15l content, It helped me in Cse 12 Programming Assignments. Especially in the while loop part, jdb helped me to keep track of each time the loop executes and what might be the error, for example, it shows if the right and left instance variables of each node in the tree is assigned correctly.
