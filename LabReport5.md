@@ -98,6 +98,7 @@ lab7
 ## The symptom
 
 ![](bugFailure.png)
+The program is failing at merge2 test, which has the case in which the first element in list2 > list1. 
 ## Response
 
 ## Fixed bug
