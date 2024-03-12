@@ -102,6 +102,7 @@ lab7
 
 ## Fixed bug
 
-![](afterBugTests.png)
 ![](afterBugCode.png)
+![](afterBugTests.png)
+
 ## Reflection
